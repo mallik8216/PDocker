@@ -7,3 +7,5 @@ ENV course="Devops and Amazon" \
 RUN echo "Hello User: ${username}, image version: ${version}"  > /tmp/devops.txt
 #RUN echo "Hello ${trainer}" > /var/tmp/devops.txt
 CMD [ "sleep","1800" ]
+
+#docker build -t  arg20 --progress=plain --no-cache --build-arg USERNAME=Some-user .
