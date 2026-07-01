@@ -4,4 +4,5 @@ COPY package.json .
 COPY *.js .
 RUN npm install
 ENV DB_HOST="mydb"
+USER expense
 CMD [ "node", "index.js" ]
